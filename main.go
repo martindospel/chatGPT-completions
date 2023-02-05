@@ -22,7 +22,7 @@ func main() {
 
 	res, err := client.Completion(ctx, gpt3.CompletionRequest{
 		Prompt:    []string{"A random joke of the day is"},
-		MaxTokens: gpt3.IntPtr(30),
+		MaxTokens: gpt3.IntPtr(50),
 		Stop:      []string{"."},
 		Echo:      true,
 	})
